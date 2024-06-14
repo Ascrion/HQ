@@ -1,10 +1,107 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Verification Gateway</title>
-        <link rel="stylesheet" href="./signup_output.css">
-    </head>
-    <body>
-        <h1 class="bg-green-400">Hi</h1>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Gateway</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        #invite {
+            background-color: #122449;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        #signin_input {
+            background-color: #f9fafb;
+            padding: 2rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 0.5rem;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+        }
+
+        input[type="submit"] {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 3px;
+            background-color: #263d6c;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d131e;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="invite">
+        <h1>ASI-OPEN VERIFICATION GATEWAY</h1>
+        <h3>Please enter your credentials to access the admin dashboard.</h3>
+    </div>
+
+    <div id="signin_input">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Please Enter your Name</legend>
+
+                <label for="first_name">First Name: </label>
+                <input type="text" id="first_name" name="first_name" required>
+
+                <label for="last_name">Last Name: </label>
+                <input type="text" id="last_name" name="last_name" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Please enter your password</legend>
+
+                <label for="user_password">Password:</label>
+                <input type="password" id="user_password" name="user_password" required>
+
+                <label for="confirm_password">Confirm password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
 </html>
