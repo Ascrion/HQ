@@ -79,7 +79,7 @@
     </div>
 
     <div id="signin_input">
-        <form action="#" method="post">
+        <form action="#" method="post" novalidate>
             <fieldset>
                 <legend>Please Enter your Name</legend>
 
@@ -94,10 +94,10 @@
                 <legend>Please enter your password</legend>
 
                 <label for="user_password">Password:</label>
-                <input type="password" id="user_password" name="user_password" min = "4" required>
+                <input type="password" id="user_password" name="user_password" minlength="4" required>
 
                 <label for="confirm_password">Confirm password:</label>
-                <input type="password" id="confirm_password" name="confirm_password" min="4" required>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="4" required>
             </fieldset>
 
             <input type="submit" id="submit_button" value="Submit">
