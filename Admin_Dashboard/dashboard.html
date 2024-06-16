@@ -17,11 +17,19 @@
             background-color: #00BFFF;
         }
 
-        /* Additional global styles can be added here */
+        .project_cell{
+            border-left: 0.5rem solid orange;
+            border-radius: 5px;
+            background-color: white;
+            padding: 1rem;
+            width: 100%;
+            height: auto;
+            overflow: hidden; 
+        }
     </style>
 </head>
 <body>
-    <div id="content" class="flex w-screen h-screen">
+    <div id="content" class="flex w-screen h-screen overflow-hidden">
 
         <!-- Side Panel -->
         <div id="side_panel" class="flex flex-col justify-evenly w-1/5 relative h-full text-white text-3xl items-center">
@@ -75,6 +83,8 @@
 
         <!-- Main Content -->
         <div id="main_content" class="bg-gray-400 w-4/5 ">
+
+            <!--Header-->
             <div id="header" class="h-1/6 w-full flex items-center justify-between px-6 bg-white">
                 <div class="flex items-center w-3/5">
                     <img src="MEDIA/search.png" class="w-10 mr-2">
@@ -95,6 +105,57 @@
                     <button class="px-4 py-2 text-white rounded mr-2">Share</button>
                 </div>
             </div>
+
+            <!--Content-->
+            <div class="flex w-full h-full bg-gray-300 py-4 px-4">
+                
+                <!--Projects-->
+                <div id="projects" class="w-3/4 h-full">
+                    <h1 class="font-bold px-2 py-1 ml-2 w-full text-lg text-left">Your Projects</h1>
+                    <div class="grid grid-flow-row-dense grid-cols-2 gap-8 mt-4 w-full h-3/4">
+                        <div class="project_cell">
+                            Hi
+                        </div>
+                        <div class="project_cell">
+                            Hi
+                        </div>
+                        <div class="project_cell">
+                            Hi
+                        </div>
+                        <div class="project_cell">
+                            Hi
+                        </div>
+                        <div class="project_cell">
+                            Hi
+                        </div>
+                    </div>
+                </div>
+
+                <!--Misc Tabs-->
+                <div id="misc" class=" flex flex-col h-full w-1/4  ml-8">
+
+                    <!--Announcements-->
+                    <div id="Announcements" class="w-5/6">
+                        <h1 class="font-bold  py-1 ml-2 w-full text-lg text-left"
+                        >Announcements</h1>
+                        <div class="bg-white grid-flow-row overflow-auto resize-y p-4 mt-4">
+                            Nothing to display yet
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--Trending-->
+                    <div id="trending" class="w-5/6">
+                        <h1 class="font-bold px-2 py-1 w-full text-lg text-left"
+                        >Trending</h1>
+                        <div class="bg-white grid-flow-row overflow-auto resize-y p-4 mt-4">
+                            Nothing to display yet
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
